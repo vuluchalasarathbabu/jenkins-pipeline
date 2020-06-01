@@ -1,0 +1,34 @@
+Declarative Script
+============================================================================================================================
+pipeline{
+    agent any
+    stages{
+        stage("welocme to the jenkins"){
+            steps{
+                echo "welocme to the jenkins decalarative pipeline"
+            }
+        }
+        stage("welocme to the world"){
+            steps{
+                echo "welocme to the jenkins decalarative pipeline"
+            }
+        }
+    }
+} 
+
+============================================================================================================================
+Checkout SCM
+============================================================================================================================
+pipeline{
+    agent any
+    stages{
+        stage("git cehcekout"){
+            steps{
+                git credentialsId: 'github', url: 'https://github.com/vuluchalasarathbabu/python.git'
+            }
+        }
+    }
+    
+}
+
+===========================================================================================================================
