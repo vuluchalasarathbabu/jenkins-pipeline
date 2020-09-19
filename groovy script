@@ -125,6 +125,9 @@ cron (H * * * *)
 
 ----------------------
 
+aws ssm get parameter --region $region query parameter value
+---------------------------
+
         stage('Build Image to dockerhub') {
             when {
                 branch 'master'
